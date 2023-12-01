@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>TicketMaster</title>
+</head>
+<body>
+    
+    <nav class="navbar bg-primary" data-bs-theme="dark">
+        <table>
+            <tr>
+                
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="navbar-brand" aria-current="page" href="#">Home</a>
+                <a class="navbar-brand" href="#">Eventos</a>
+                <a class="navbar-brand" href="#">Registrese</a>
+                <a class="navbar-brand" aria-disabled="true">Contactenos</a>
+            </div>
+            </div> 
+            </tr>
+            <tr>
+            <div>
+                <a class="navbar-brand" aria-current="page" href="#" ><strong>TicketMaster</strong></a>
+                <a class="navbar-brand" aria-current="page" href="#"></a>
+                <a class="navbar-brand" aria-current="page" href="#">Home</a>
+                <a class="navbar-brand" href="#">Eventos</a>
+                <a class="navbar-brand" href="#">Registrese</a>
+                <a class="navbar-brand" aria-disabled="true">Contactenos</a>
+            </div>  
+            <div>
+                <nav class="navbar bg-primary">
+                    <div class="container-fluid">
+                      <form class="d-flex" role="search">
+                        <input type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                      </form>                      
+                    </div>
+                </nav>
+            </div>
+            </tr>
+        </table>
+    </nav>
+    
+    <div class="container">
+        <div>
+            <img src="Images/rio.jpg" class="img-thumbnail" alt="..."> 
+            <p align:justify>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut lectus venenatis eros finibus cursus. Nunc non ipsum condimentum, ullamcorper sem vitae, suscipit nunc. Donec blandit feugiat est, non vehicula nunc fermentum eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed facilisis odio ac arcu semper aliquam. Morbi hendrerit massa sit amet sapien ornare, et sagittis eros scelerisque. Ut ut quam non ipsum vehicula maximus. Fusce vehicula, urna id vulputate cursus, ante orci iaculis justo, eget aliquam sem nisi a ipsum. Vivamus nec orci vel est congue tincidunt. Fusce interdum efficitur dapibus. Vivamus imperdiet sollicitudin metus rhoncus vehicula. Sed volutpat lobortis eros posuere porttitor. Sed vitae sapien id nunc euismod congue. Nam tempus scelerisque nunc sit amet placerat.
+            </p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Comprar Entrada
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Entrada</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                              <label for="tipodeentrada" class="form-label">Tipo de Entrada</label>
+                              <input type="text" class="form-control" id="entrada">
+                            </div>
+                            <div class="mb-3">
+                              <label for="cantidad" class="form-label">Cantidad</label>
+                              <input type="text" class="form-control" id="cantidad">
+                            </div>
+                            <div class="mb-3">
+                                <label for="total" class="form-label">Total a Pagar</label>
+                                <input type="text" class="form-control" id="total">
+                              </div>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Calcular Monto</button>
+                      <button type="button" class="btn btn-primary">Pagar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <h1>Distribucion de Entradas</h1>
+            <image src="Images/entradas-distribucion.jpg"class="img-fluid" alt="..."></image>
+        </div>
+    </div>
+    <br>
+        
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.863);">  
+
+        <div class="row">
+        <div class="footer-tm text-left">
+        <div class="row">
+        <div class="col-xs-12 col-sm-4">
+        <h5>Acceso rápido</h5>
+
+        <ul>
+        <li><a href="#" style="color: aliceblue;">Mis entradas</a></li>
+        <li><a href="#" style="color: aliceblue;">Mi cuenta</a></li>
+        <li><a href="#" style="color: aliceblue;">Soporte</a></li>
+        </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+        <h5>Términos y condiciones</h5>
+
+        <ul>
+        <li><a href="#" style="color: aliceblue;">Términos y condiciones</a></li>
+        <li><a href="#" style="color: aliceblue;">Política de privacidad</a></li>
+        <li><a href="#" style="color: aliceblue;">Política de cookies</a></li>
+        </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+        <h5>Empresa</h5>
+
+        <ul>
+        <li><a href="#1" style="color: aliceblue;">Ticketmaster Perú</a></li>
+        <li><a href="#" target="_blank"><img alt="" src="https://cdn.getcrowder.com/images/903594b4-276b-4f44-97f4-8aeff8e87302-libro-de-reclamaciones-.png" style="width: 120px; height: 100%;"></a></li>
+        </ul>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-xs-12"><img alt="Ticketmaster" class="logo" src="https://cdn.boletius.com/ticketmaster/ticketmaster-logo_white.png"></div>
+        </div>
+
+        <div class="row">
+        <div class="col-xs-12 col-sm-6 foo-social"><a href="https://www.instagram.com/ticketmasterpe" target="_blank"><img alt="Instagram" src="https://cdn.boletius.com/images/1643379600508-instagram.png" style="height: 16px;"> </a> <a href="https://www.facebook.com/ticketmasterpe" target="_blank"> <img alt="facebook" src="https://cdn.boletius.com/images/1643379516372-facebook.png" style="height: 16px;"></a> <a href="https://twitter.com/Ticketmasterpe" target="_blank"> <img alt="Twitter" src="https://cdn.getcrowder.com/images/12e77c5c-13c6-431c-a09a-1abbd59a277f-1643379647315-x.png" style="height: 16px;"> </a> <a href="https://www.tiktok.com/@ticketmasterpe" target="_blank"> <img alt="Tiktok" src="https://cdn.getcrowder.com/images/1c947960-643d-447a-9c08-480ab2440ef7-1643379647315-tiktok.png" style="height: 16px;"> </a> <a href="https://www.linkedin.com/company/ticketmaster-per%C3%BA" target="_blank"> <img alt="Linkedin" src="https://cdn.boletius.com/images/1643379625842-linkedin.png" style="height: 16px;"></a>&nbsp;</div>
+
+        <div class="col-xs-12 col-sm-6 foo-copy"><a class="ot-sdk-show-settings cookie-settings-btn" id="ot-sdk-btn">Configuración de cookies</a>© 2023&nbsp;Ticketmaster. Todos los derechos reservados.</div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+  
+
+  
+</style>
+        </div>
+          </div>
+      </div>  
+    </div>  
+    </footer>
+
+    
+        
+    
+    
+</body>
+</html>
