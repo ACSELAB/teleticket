@@ -105,34 +105,37 @@
                     <div class="mb-3">
                         <label for="section" class="form-label">Sección</label>
                         <select class="form-select" id="section"  required>
-                            <option value="platinium">cancha 1 izq</option>
-                            <option value="vip">cancha 1 der</option>
-                            <option value="general">cancha 2</option>
-                            <option value="occidente">oriente 1</option>
-                            <option value="oriente">Oriente 2</option>
-                            <option value="oriente">Oriente Central</option>
-                            <option value="oriente">Occidente 1</option>
-                            <option value="oriente">Occidente 2</option>
-                            <option value="oriente">Occidente Central</option>
-                            <option value="oriente">Tribuna Norte</option>
+                            <option value="platinium">cancha 1 izq - s/. 720.00</option>
+                            <option value="vip">cancha 1 der - s/. 720.00</option>
+                            <option value="general">cancha 2 - s/. 320.00</option>
+                            <option value="occidente">oriente 1 - s/. 550.00</option>
+                            <option value="oriente">Oriente 2 - s/. 450.00</option>
+                            <option value="oriente">Oriente Central - s/. 520.00</option>
+                            <option value="oriente">Occidente 1 - s/. 550.00</option>
+                            <option value="oriente">Occidente 2 - s/. 450.00</option>
+                            <option value="oriente">Occidente Central - s/. 520.00</option>
+                            <option value="oriente">Tribuna Norte - s/. 220.00</option>
                         </select>
                     </div>
 
-                    <div class="mb-3">
-                        <label for="rate" class="form-label">Tarifa</label>
-                        <select class="form-select" id="rate" required>
-                            <!-- Agrega opciones de tarifas según tus necesidades -->
-                            <option value="tarifa1">Tarifa 1</option>
-                            <option value="tarifa2">Tarifa 2</option>
-                            <option value="tarifa3">Tarifa 3</option>
-                        </select>
-                    </div>
 
                     <div class="mb-3">
                         <label for="quantity" class="form-label">Cantidad</label>
                         <input type="number" class="form-control" id="quantity" placeholder="Ingrese la cantidad" required>
                     </div>
-                    
+                    <div class="mb-3">
+                        <h2 class="text-center mb-4">EXTRAS</h2>
+                        <label for="section" class="form-label">Elija su bebida</label>
+                        <select class="form-select" id="section"  required>
+                            <option value="pilsen">PILSEN vaso 610 ml. - s/. 10.00</option>
+                            <option value="cusqueña">CUSQUEÑA vaso 610 ml. - s/. 10.00 </option>
+                            <option value="corona">CORONA lata 355 ml. - s/. 8.00 </option>
+                            <option value="mikes">MIKES lata 355 ml. - s/. 8.00</option>
+                            <option value="corona_tropical">CORONA TROPICAL lata 355 ml. - s/. 8.00</option>
+                        </select>
+                        <label for="quantity" class="form-label">Cantidad</label>
+                        <input type="number" class="form-control" id="quantity" placeholder="Ingrese la cantidad" required>
+                    </div>
                     <button type="button" class="btn btn-primary btn-block" data-bs-toggle="modal" data-bs-target="#paymentGatewayModal">Continuar</button>
                 </form>
             </div>
