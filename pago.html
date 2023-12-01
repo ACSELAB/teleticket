@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofGJzfu3F+OpdCFfNE4AHUn4t8pRQ00dP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Compra de Boletos - TicketMaster</title>
+    <style>
+        body {
+            background-image: url("Images/ticketmaster.jpg");
+            
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        .stadium-container {
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            -margin-left:10px;
+        }
+
+        .stadium-image {
+    height: auto;
+    width: auto;
+    -background-color: #FFF;
+    
+    -box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .ticket-form {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" aria-current="page" href="#"><strong>TicketMaster</strong></a>
+            <a class="navbar-brand" aria-current="page" href="#">Home</a>
+            <a class="navbar-brand" href="#">Eventos</a>
+            <a class="navbar-brand" href="#">Registrese</a>
+            <a class="navbar-brand" aria-disabled="true">Contactenos</a>
+            <input type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <form class="d-flex" role="search">
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="navbar-brand" aria-current="page" href="#">Home</a>
+                <a class="navbar-brand" href="#">Eventos</a>
+                <a class="navbar-brand" href="#">Registrese</a>
+                <a class="navbar-brand" aria-disabled="true">Contactenos</a>
+            </div>
+            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Estadio como imagen en la parte izquierda -->
+            <div class="col-md-6 stadium-container d-flex align-items-center">
+    <img src="Images/mapa.png" alt="Estadio" class="stadium-image img-fluid">
+</div>
+
+            <!-- Formulario en el lado derecho -->
+            <div class="col-md-6 form-container">
+                <form class="ticket-form">
+                    <h2 class="text-center mb-4">Compra de Boletos</h2>
+
+                    <div class="mb-3">
+                        <label for="section" class="form-label">Sección</label>
+                        <select class="form-select" id="section"  required>
+                            <option value="platinium">cancha 1 izq</option>
+                            <option value="vip">cancha 1 der</option>
+                            <option value="general">cancha 2</option>
+                            <option value="occidente">oriente 1</option>
+                            <option value="oriente">Oriente 2</option>
+                            <option value="oriente">Oriente Central</option>
+                            <option value="oriente">Occidente 1</option>
+                            <option value="oriente">Occidente 2</option>
+                            <option value="oriente">Occidente Central</option>
+                            <option value="oriente">Tribuna Norte</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="rate" class="form-label">Tarifa</label>
+                        <select class="form-select" id="rate" required>
+                            <!-- Agrega opciones de tarifas según tus necesidades -->
+                            <option value="tarifa1">Tarifa 1</option>
+                            <option value="tarifa2">Tarifa 2</option>
+                            <option value="tarifa3">Tarifa 3</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Cantidad</label>
+                        <input type="number" class="form-control" id="quantity" placeholder="Ingrese la cantidad" required>
+                    </div>
+                    
+                    <button type="button" class="btn btn-primary btn-block" data-bs-toggle="modal" data-bs-target="#paymentGatewayModal">Continuar</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+      <!-- Modal de Pasarela de Pago -->
+    <div class="modal fade" id="paymentGatewayModal" tabindex="-1" aria-labelledby="paymentGatewayModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    
+                    <img src="Images/niubiz.jpg"  class="stadium-image img-fluid">
+                    
+                    
+                </div>
+                <div class="modal-body">
+                    <!-- Formulario de Pasarela de Pago -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label">Número de Tarjeta</label>
+                            <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="expirationDate" class="form-label">Fecha de Expiración</label>
+                                    <input type="text" class="form-control" id="expirationDate" placeholder="MM/YY" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="cvv" class="form-label">CVV</label>
+                                    <input type="text" class="form-control" id="cvv" placeholder="123" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cardHolder" class="form-label">Nombre del Titular</label>
+                            <input type="text" class="form-control" id="cardHolder" placeholder="Nombre Apellido" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="correo@example.com" required>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-block" data-bs-toggle="modal" data-bs-target="#paymentSuccessModal">Pagar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Pago Exitoso -->
+    <div class="modal fade" id="paymentSuccessModal" tabindex="-1" aria-labelledby="paymentSuccessModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="paymentSuccessModalLabel">Compra Exitosa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¡Gracias por su compra! Su transacción ha sido procesada con éxito.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <!-- Puedes agregar un enlace a la página de confirmación aquí -->
+                    <a href="pagina_confirmacion.html" class="btn btn-primary">Ir a la Confirmación</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Contenido del footer -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.863);">  
+
+        <div class="row">
+        <div class="footer-tm text-left">
+        <div class="row">
+        <div class="col-xs-12 col-sm-4">
+        <h5>Acceso rápido</h5>
+
+        <ul>
+        <li><a href="#" style="color: aliceblue;">Mis entradas</a></li>
+        <li><a href="#" style="color: aliceblue;">Mi cuenta</a></li>
+        <li><a href="#" style="color: aliceblue;">Soporte</a></li>
+        </ul>
+        </div>
+        
+
+        <div class="col-xs-12 col-sm-4">
+        <h5>Términos y condiciones</h5>
+
+        <ul>
+        <li><a href="#" style="color: aliceblue;">Términos y condiciones</a></li>
+        <li><a href="#" style="color: aliceblue;">Política de privacidad</a></li>
+        <li><a href="#" style="color: aliceblue;">Política de cookies</a></li>
+        </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+        <h5>Empresa</h5>
+
+        <ul>
+        <li><a href="#1" style="color: aliceblue;">Ticketmaster Perú</a></li>
+        <li><a href="#" target="_blank"><img alt="" src="https://cdn.getcrowder.com/images/903594b4-276b-4f44-97f4-8aeff8e87302-libro-de-reclamaciones-.png" style="width: 120px; height: 100%;"></a></li>
+        </ul>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-xs-12"><img alt="Ticketmaster" class="logo" src="https://cdn.boletius.com/ticketmaster/ticketmaster-logo_white.png"></div>
+        </div>
+
+        <div class="row">
+        <div class="col-xs-12 col-sm-6 foo-social"><a href="https://www.instagram.com/ticketmasterpe" target="_blank"><img alt="Instagram" src="https://cdn.boletius.com/images/1643379600508-instagram.png" style="height: 16px;"> </a> <a href="https://www.facebook.com/ticketmasterpe" target="_blank"> <img alt="facebook" src="https://cdn.boletius.com/images/1643379516372-facebook.png" style="height: 16px;"></a> <a href="https://twitter.com/Ticketmasterpe" target="_blank"> <img alt="Twitter" src="https://cdn.getcrowder.com/images/12e77c5c-13c6-431c-a09a-1abbd59a277f-1643379647315-x.png" style="height: 16px;"> </a> <a href="https://www.tiktok.com/@ticketmasterpe" target="_blank"> <img alt="Tiktok" src="https://cdn.getcrowder.com/images/1c947960-643d-447a-9c08-480ab2440ef7-1643379647315-tiktok.png" style="height: 16px;"> </a> <a href="https://www.linkedin.com/company/ticketmaster-per%C3%BA" target="_blank"> <img alt="Linkedin" src="https://cdn.boletius.com/images/1643379625842-linkedin.png" style="height: 16px;"></a>&nbsp;</div>
+
+        <div class="col-xs-12 col-sm-6 foo-copy"><a class="ot-sdk-show-settings cookie-settings-btn" id="ot-sdk-btn">Configuración de cookies</a>© 2023&nbsp;Ticketmaster. Todos los derechos reservados.</div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+  
+
+  
+</style>
+        </div>
+          </div>
+      </div>  
+    </div>  
+    </footer>
+
+</body>
+</html>
