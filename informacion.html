@@ -6,6 +6,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>TicketMaster</title>
+    <style>
+      body {
+          background-color: #080808; /* Color gris claro, puedes ajustar el valor según tus preferencias */
+          margin: 0; /* Elimina el margen predeterminado del body para ocupar todo el espacio disponible */
+          padding: 0; /* Elimina el relleno predeterminado del body */
+      }
+  </style>
 </head>
 <body>
     
@@ -50,47 +57,29 @@
     
     <div class="container">
         <div>
-            <img src="Images/rio.jpg" class="img-thumbnail" alt="..."> 
-            <p align:justify>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut lectus venenatis eros finibus cursus. Nunc non ipsum condimentum, ullamcorper sem vitae, suscipit nunc. Donec blandit feugiat est, non vehicula nunc fermentum eget. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed facilisis odio ac arcu semper aliquam. Morbi hendrerit massa sit amet sapien ornare, et sagittis eros scelerisque. Ut ut quam non ipsum vehicula maximus. Fusce vehicula, urna id vulputate cursus, ante orci iaculis justo, eget aliquam sem nisi a ipsum. Vivamus nec orci vel est congue tincidunt. Fusce interdum efficitur dapibus. Vivamus imperdiet sollicitudin metus rhoncus vehicula. Sed volutpat lobortis eros posuere porttitor. Sed vitae sapien id nunc euismod congue. Nam tempus scelerisque nunc sit amet placerat.
-            </p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Comprar Entrada
-            </button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar Entrada</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                              <label for="tipodeentrada" class="form-label">Tipo de Entrada</label>
-                              <input type="text" class="form-control" id="entrada">
-                            </div>
-                            <div class="mb-3">
-                              <label for="cantidad" class="form-label">Cantidad</label>
-                              <input type="text" class="form-control" id="cantidad">
-                            </div>
-                            <div class="mb-3">
-                                <label for="total" class="form-label">Total a Pagar</label>
-                                <input type="text" class="form-control" id="total">
-                              </div>
-                          </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Calcular Monto</button>
-                      <button type="button" class="btn btn-primary">Pagar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
+          <img src="Images/informacion/fondo1.png" class="img-fluid" alt="...">
+          <image src="Images/informacion/fondo2.png"class="img-fluid" alt="..."/>
         <div>
-            <h1>Distribucion de Entradas</h1>
-            <image src="Images/entradas-distribucion.jpg"class="img-fluid" alt="..."></image>
+            <image src="Images/informacion/fondo3.png"class="img-fluid" alt="..."/>
+        <style>
+          .btn-image-container img {
+            width: 180px; /* Ajusta el ancho de la imagen según tu preferencia */
+            height: auto; /* Mantén la proporción original de la imagen */
+          }
+        </style>
+        <div class="d-flex justify-content-center my-2">
+          <div class="btn-image-container">
+            <button type="button" class="btn btn-danger mx-2">
+              <img src="Images/informacion/descuentoWrite.png" alt="Dark Image" class="mr-2" />
+              Comprar Ahora
+            </button>
+          </div>
+          <div class="btn-image-container">
+            <button type="button" class="btn btn-light mx-2">
+              <img src="Images/informacion/ventaRegular.png" alt="Light Image" class="mr-2" />
+              Comprar Ahora
+            </button>
+          </div>
         </div>
     </div>
     <br>
