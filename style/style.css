@@ -1,0 +1,48 @@
+
+        body {
+            background-image: url("../Images/ticketmaster.jpg");
+            
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        .stadium-container {
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            -margin-left:10px;
+        }
+
+        .stadium-image {
+    height: auto;
+    width: auto;
+    -background-color: #FFF;
+    
+    -box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .ticket-form {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
